@@ -1,0 +1,759 @@
+
+h1, h2, h3, h5, p{
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  
+  
+}
+body{
+  margin-left: 0px;
+margin-top: 0px;
+margin-right: 0px;
+margin-bottom: 0px;
+}
+
+input:hover{
+  background-color: chartreuse;
+}
+/*Mobile */
+
+@media only screen and (max-width: 480px){
+
+   
+  .grid-container {
+      display: grid;
+      grid-template-areas:
+        'header'
+        'top'
+        'menu'
+        'main'
+        'footer';
+        /* grid-gap: 10px; */
+        /* background-color: olive; */
+        padding: 10px;
+    
+      
+    }
+    .grid-container > div {
+      text-align: center;
+      padding: 5px 0;
+      font-size: 30px;
+    }
+    
+    .header { 
+      grid-area: header;
+      background-color: #aed581ad; 
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+      
+     }
+    .menu { 
+      grid-area: menu; 
+      background-color: white;
+      top: 0;
+     }
+
+  .menu h1 {
+      font-size: 50px;
+      font-family: 'Great Vibes', cursive;
+  }
+  .menu h3 {
+      font-size: 25px;
+      text-align: center;
+      font-family: 'Great Vibes', cursive;
+    
+    
+    }
+    nav { 
+      /* width: 100%; */
+      background-color: #aed581ad; 
+      color: grey;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      flex-wrap: nowrap;
+      height: max-content;
+            
+      }
+      nav a{ 
+             padding: 20px;
+             text-decoration: none;
+             font-size: 25px;
+             font-family: 'Great Vibes', cursive;
+             /* background-image: url("./images/stones.jpg");
+             background-position: center;
+             background-repeat: no-repeat;
+             background-size: cover; */
+             text-align: center;
+         }
+         a:hover {
+          background-color: #808000a2;
+            
+        }
+    
+    nav img {
+      width: 75px;
+      height: 75px;
+      border-radius: 50%;
+      position: relative;
+      left:30px;
+      top:15px;
+    }
+    .logo-image{
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      /* overflow: overlay; */
+      margin-top: -6px;
+  }
+    .top { 
+      grid-area: top;
+      height: max-content;
+      padding: 10px;
+      background-color: #aed581ad; 
+      text-align: center;
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    .top img {
+      /* width: 600px; */
+      height: 250px;
+      padding: 10px;
+    }
+    .top p{
+      font-size: x-large;
+      font-style: italic;
+      
+    }
+    
+    .main { 
+      grid-area: main;
+      height: max-content;
+      padding: 10px;
+      background-color: white;
+      text-align: center;
+      color: black;
+        }
+        .main p{
+          font-size: x-large;
+          font-style: italic;
+          padding-bottom: 10px;
+          padding-top: 10px;
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+        .main_container{
+          display: flex;
+          flex-direction: column;
+        }
+
+        .main_container img {
+          width: 100%;
+          border-radius: 50%;
+        }
+
+        .outer_form_container{
+          background-color: #aed581ad;
+          border: 3px solid black;
+          margin-top: 20px;;
+        }
+       .form_container input[type=text], select, textarea {
+          width: 100%;
+          padding: 12px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+          margin-top: 6px;
+          margin-bottom: 16px;
+          resize: vertical;
+        }
+        
+        .form_contaniner input[type=text], select, textarea {
+          width: 100%;
+          padding: 12px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+          margin-top: 6px;
+          margin-bottom: 16px;
+          resize: vertical;
+        }
+        /*button*/
+        .form_container input[type=submit] {
+          background-color: grey;
+          color: white;
+          /* padding: 12px 20px; */
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+        
+        .form_contanier input[type=submit]:hover {
+          background-color: #45a049;
+        }
+        
+        .form_container {
+          border-radius: 5px;
+          background-color: aed581ad;
+          padding: 20px;
+        }
+        table {
+          width:100%;
+          margin-top: 25px;
+        }
+        table, th, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+        }
+        th, td {
+          padding: 15px;
+          text-align: center;
+          font-size: 15px;
+        }
+        thead, tfoot{
+          background-color: #aed581ad;
+        }
+        thead tr, tfoot{
+          column-span: all;
+        }
+    .footer { 
+      grid-area: footer;
+      background-color: white;
+      color: black;
+      }
+    .text_container{
+      display: flex;
+      flex-wrap: wrap;
+      background-color: #aed581ad; 
+      flex-direction: column;
+      margin: 0px 50px;
+      padding: 20px;
+      }
+    .text_container > div {
+      /* background-color: #f1f1f1; */
+      align-items: stretch;
+      margin: 10px;
+      text-align: center;
+      /* line-height: 75px; */
+      font-size: 15px;
+        }
+      .text_container p {
+        padding: 0px;
+      }
+      
+      .form_container input {
+       position: inherit;
+       /* left:20px; */
+       width: 250px;
+       height: 25px;
+       
+      }
+
+      .form_container button {
+        position: inherit;
+        /* left:20px; */
+        width: max-content;
+        height: 40px;
+        
+       }
+}
+/*tablet */
+
+@media only screen and (min-width: 480px) and (max-width: 1024px){
+
+   
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      'header'
+      'top'
+      'menu'
+      'main'
+      'footer';
+      /* grid-gap: 10px; */
+      /* background-color: olive; */
+      padding: 10px;
+  
+    
+  
+    
+  }
+  .grid-container > div {
+    text-align: center;
+    
+    font-size: 30px;
+  }
+  
+  .header { 
+    grid-area: header;
+    background-color: #aed581ad; 
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    
+   }
+  .menu { 
+    grid-area: menu; 
+    background-color: white;
+    top: 0;
+    position: sticky;
+   }
+
+.menu h1 {
+    font-size: 50px;
+    font-family: 'Great Vibes', cursive;
+}
+.menu h3 {
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Great Vibes', cursive;
+  
+  
+  }
+  nav { 
+    /* width: 100%; */
+    background-color: #aed581ad; 
+    color: grey;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    height: max-content;
+          
+    }
+    nav a{ 
+           padding: 20px;
+           text-decoration: none;
+           font-size: 20px;
+           font-family: 'Great Vibes', cursive;
+           /* background-image: url("./images/stones.jpg");
+           background-position: center;
+           background-repeat: no-repeat;
+           background-size: cover; */
+           text-align: center;
+       }
+       a:hover {
+        background-color: #808000a2;
+          
+      }
+  
+  nav img {
+    width: 0px;
+    height: 0px;
+   
+  }
+  .logo-image{
+    width: 0px;
+    height: 0px; 
+    /* padding: 10px; */
+}
+  .top { 
+    grid-area: top;
+    /* height: max-content; */
+    padding: 10px;
+    background-color: #aed581ad; 
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .top img {
+    /* width: 600px; */
+    height: 250px;
+    padding: 10px;
+  }
+  .top p{
+    font-size: x-large;
+    font-style: italic;
+    
+  }
+  .main { 
+    grid-area: main;
+    height: max-content;
+    padding: 10px;
+    background-color: white;
+    text-align: center;
+    color: black;
+      }
+      .main p{
+        font-size: x-large;
+        font-style: italic;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .main_container{
+        display: flex;
+        flex-direction: column;
+      }
+
+      .main_container img {
+        width: 75%;
+        border-radius: 50%;
+      }
+      .outer_form_container{
+        background-color: #aed581ad;
+        border: 3px solid black;
+        margin-top: 20px;
+        width: 50%;
+        
+      }
+     .form_container input[type=text], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+      }
+      
+      .form_contaniner input[type=text], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+      }
+      /*button*/
+      .form_container input[type=submit] {
+        background-color: grey;
+        color: white;
+        /* padding: 12px 20px; */
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      
+      .form_contanier input[type=submit]:hover {
+        background-color: #45a049;
+      }
+      
+      .form_container {
+        border-radius: 5px;
+        background-color: aed581ad;
+        padding: 20px;
+      }
+      table {
+        width:100%;
+        margin-top: 25px;
+      }
+      table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      th, td {
+        padding: 15px;
+        text-align: center;
+        font-size: 15px;
+      }
+      thead, tfoot{
+        background-color: #aed581ad;
+      }
+      thead tr, tfoot{
+        column-span: all;
+      }
+  .footer { 
+    grid-area: footer;
+    background-color: white;
+    color: black;
+    }
+  .text_container{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #aed581ad; 
+    flex-direction: column;
+    margin: 0px 50px;
+    padding: 20px;
+    }
+  .text_container > div {
+    /* background-color: #f1f1f1; */
+    align-items: stretch;
+    margin: 10px;
+    text-align: center;
+    /* line-height: 75px; */
+    font-size: 15px;
+      }
+    .text_container p {
+      padding: 0px;
+    }
+    
+    .form_container input {
+     position: inherit;
+     /* left:20px; */
+     width: 250px;
+     height: 25px;
+     
+    }
+
+    .form_container button {
+      position: inherit;
+      /* left:20px; */
+      width: max-content;
+      height: 40px;
+      
+     }
+}
+/*laptop and larger */
+@media only screen and (min-width: 1024px){
+
+   
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      'header'
+      'top'
+      'menu'
+      'main'
+      'footer';
+      /* grid-gap: 10px; */
+      /* background-color: olive; */
+      padding: 10px;
+  
+    
+  }
+  .grid-container > div {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .header { 
+    grid-area: header;
+    background-color: #aed581ad; 
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    
+   }
+  .menu { 
+    grid-area: menu; 
+    background-color: white;
+    top: 0;
+    position: sticky;
+   }
+
+.menu h1 {
+    font-size: 50px;
+    font-family: 'Great Vibes', cursive;
+}
+.menu h3 {
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Great Vibes', cursive;
+  
+  
+  }
+  nav { 
+    /* width: 100%; */
+    background-color: #aed581ad; 
+    color: grey;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    height: max-content;
+          
+    }
+    nav a{ 
+           padding: 20px;
+           text-decoration: none;
+           font-size: 20px;
+           font-family: 'Great Vibes', cursive;
+           /* background-image: url("./images/stones.jpg");
+           background-position: center;
+           background-repeat: no-repeat;
+           background-size: cover; */
+           text-align: center;
+       }
+       a:hover {
+        background-color: #808000a2;
+          
+      }
+  
+  nav img {
+    width: 0px;
+    height: 0px;
+   
+  }
+  .logo-image{
+    width: 0px;
+    height: 0px; 
+    /* padding: 10px; */
+}
+
+.top { 
+  grid-area: top;
+  /* height: max-content; */
+  padding: 10px;
+ 
+  text-align: center;
+  /* display: flex; */
+  
+  
+}
+.top img {
+  width: 550px;
+  height: 200px;
+  padding: 10px;
+  background-color: #aed581ad; 
+  
+}
+.top p{
+  /* font-size: x-large;
+  font-style: italic;
+  align-content: space-around; */
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  /* position: relative;
+  left: 15px;
+  top: -150px; */
+  visibility: hidden;
+
+}
+.main { 
+  grid-area: main;
+  height: max-content;
+  padding: 10px;
+  background-color: white;
+  text-align: center;
+  color: black;
+    }
+    .main p{
+      font-size: x-large;
+      font-style: italic;
+      padding-bottom: 10px;
+      padding-top: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .main_container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .main_container img {
+      width: 75%;
+      border-radius: 50%;
+    }
+   
+
+    .outer_form_container{
+      background-color: #aed581ad;
+      border: 3px solid black;
+      margin-top: 20px;
+      width: 550px;
+      height: 650px;
+    }
+   .form_container input[type=text], select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+    }
+    
+    .form_contaniner input[type=text], select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+    }
+    /*button*/
+    .form_container input[type=submit] {
+      background-color: grey;
+      color: white;
+      /* padding: 12px 20px; */
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    .form_contanier input[type=submit]:hover {
+      background-color: #45a049;
+    }
+    
+    .form_container {
+      border-radius: 5px;
+      background-color: aed581ad;
+      padding: 20px;
+    }
+    table {
+      width:100%;
+      margin-top: 25px;
+    }
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 15px;
+      text-align: center;
+      font-size: 15px;
+    }
+    thead, tfoot{
+      background-color: #aed581ad;
+    }
+    thead tr, tfoot{
+      column-span: all;
+    }
+.footer { 
+  grid-area: footer;
+  background-color: white;
+  color: black;
+  }
+.text_container{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #aed581ad; 
+  flex-direction: column;
+  margin: 0px 50px;
+  padding: 20px;
+  }
+.text_container > div {
+  /* background-color: #f1f1f1; */
+  align-items: stretch;
+  margin: 10px;
+  text-align: center;
+  /* line-height: 75px; */
+  font-size: 15px;
+    }
+  .text_container p {
+    padding: 0px;
+  }
+  
+  .form_container input {
+   position: inherit;
+   /* left:20px; */
+   width: 250px;
+   height: 25px;
+   
+  }
+
+  .form_container button {
+    position: inherit;
+    /* left:20px; */
+    width: max-content;
+    height: 40px;
+    
+   }
+}
+
+  
